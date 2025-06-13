@@ -1,0 +1,16 @@
+# Activar RewriteEngine
+RewriteEngine On
+
+# Redirigir automáticamente a index.php si se accede al dominio sin una ruta específica
+DirectoryIndex public/index.php
+
+# Habilitar URLs amigables (elimina index.php de la URL)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/index.php?url=$1 [QSA,L]
+
+# Bloquear acceso directo a archivos PHP en carpetas sensibles
+RewriteRule ^(config|controller|model|core)/ - [F,L]
+
+# Manejo de errores personalizados
+ErrorDocument 404 /public/index.php
