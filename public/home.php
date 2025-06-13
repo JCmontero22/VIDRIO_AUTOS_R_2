@@ -15,7 +15,7 @@ require 'includes/cabesera.php';
                         <img src="./assets/img/productos/mazda3.png" class="card-img-top" alt="...">
                     </div>
                     <div class="card-producto__info">
-                        <h4>Mazda 4</h4>
+                        <h4>Mazda 2</h4>
                         <p>$1.800.000</p>
                     </div>
                     <div class="card-producto__btn">
@@ -28,7 +28,7 @@ require 'includes/cabesera.php';
                         <img src="./assets/img/productos/mazda3.png" class="card-img-top" alt="...">
                     </div>
                     <div class="card-producto__info">
-                        <h4>Mazda 4</h4>
+                        <h4>Mazda JC</h4>
                         <p>$1.800.000</p>
                     </div>
                     <div class="card-producto__btn">
